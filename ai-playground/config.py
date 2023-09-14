@@ -1,8 +1,4 @@
-from dotenv import load_dotenv
+from dotenv import dotenv_values
+# Please login and get your API key from  https://clarifai.com/settings/security
 
-load_dotenv()  # take environment variables from .env.
-
-# Code of your application, which uses environment variables (e.g. from `os.environ` or
-# `os.getenv`) as if they came from the actual environment.
-
-export OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
+SECRETS = dotenv_values(".env") 
