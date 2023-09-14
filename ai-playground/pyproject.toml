@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ai-playground"
+version = "0.1.0"
+description = ""
+authors = ["vikyw89 <vikyw89@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = {extras = ["llms"], version = "^0.0.288"}
+openai = "^0.28.0"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
